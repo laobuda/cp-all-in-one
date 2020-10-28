@@ -55,8 +55,6 @@ services:
       - schema-registry
     ports:
       - "8083:8083"
-    extra_hosts:
-      - "localhost:192.168.1.107"
     environment:
       CONNECT_BOOTSTRAP_SERVERS: 'broker:29092'
       CONNECT_REST_ADVERTISED_HOST_NAME: connect
